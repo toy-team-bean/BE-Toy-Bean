@@ -9,6 +9,9 @@ public class MemoryMemberRepository implements MemberRepository{
     private static Map<Long, Member> store = new HashMap<>();
     private static long seq = 0L;
 
+
+
+
     @Override
     public Member save(Member member) {
         member.setId(++seq);
